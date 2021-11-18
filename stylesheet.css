@@ -1,0 +1,62 @@
+body{
+    background-color: RGB(44 47 51);
+}
+.menu{
+    display:flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color:#25272A;
+    font-size: 20px;
+    color:white;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    padding:2px;
+    margin: 10px;
+    top:5px;
+    left: 5px;
+}
+.menu,a{
+    color: #99aab5;
+}
+.about-me-class{
+    display:flex;
+}
+#text{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+p{
+    color:white;
+    width: 90%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+h1{
+    font-family: 'Anton', sans-serif;
+    color: RGB(88 101 242);
+}
+#my-photo{
+    display:block;
+    width:10cm;
+    height:10cm;
+}
+@keyframes cool {
+    from {color:RGB(252 21 182);
+    }
+    to {color:RGB(21 236 252);
+    }
+}
+#my-name{
+      font-family: 'Road Rage', cursive;
+      animation-name: cool;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+}
+.tcontainer{
+    width: 200px;
+    height: 120px;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+.skills-class{
+    display: flex;
+}
