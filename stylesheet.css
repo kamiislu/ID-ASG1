@@ -9,7 +9,7 @@ body{
     font-size: 20px;
     color:white;
     font-family: 'M PLUS Code Latin', sans-serif;
-    padding:2px;
+    padding: 5px;
     margin: 10px;
     top:5px;
     left: 5px;
@@ -19,11 +19,15 @@ body{
 }
 .about-me-class{
     display:flex;
+    flex-direction: row;
+}
+@media (max-width: 600px){
+    .about-me-class{flex-direction:column;}
 }
 #text{
     display:flex;
-    flex-direction: column;
     font-family: 'Open Sans', sans-serif;
+    margin:10px;
 }
 p{
     color:white;
@@ -36,7 +40,12 @@ h1{
     color: RGB(88 101 242);
 }
 #my-photo{
-    display:block;
+    display:flex;
+    width:auto;
+    height:400px;
+    margin:10px;
+}
+#container{
     width:10cm;
     height:10cm;
 }
@@ -53,9 +62,10 @@ h1{
       animation-iteration-count: infinite;
 }
 .tcontainer{
-    width: 200px;
-    height: 120px;
+    width: 400px;
+    height: 240px;
     clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    
 }
 .skills-class{
     display: flex;
